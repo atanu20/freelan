@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', serif;
+        }
+        .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+}
+
+.navbar-toggler .fa-bars {
+
+    color: rgb(228, 8, 8) !important;
+    font-size: 35px;
+}
+
+        .logo{
+            width: 150px;
+            height: 75px;
+        }
+        .nav-link{
+            font-weight: 600;
+            color: #fff;
+        }
+        .hero{
+            width: 100%;
+            min-height: 120vh;
+			background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/banar.jpg");
+			background-position: center;
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+            display: grid;
+            place-items: center;
+        
+            
+        }
+        .hero h1{
+            color:white;
+            font-weight: 600;
+            font-size: 65px;
+        }
+        .hero .card{
+            border: none !important;
+            padding: 15px;
+           
+            border-radius: 10px;
+
+        }
+.hero .row{
+    padding-top: 150px;
+}
+
+        .form-control {
+    border:1px solid rgb(184, 3, 39) !important;
+    
+}
+.form-control:focus{
+    
+  box-shadow: none;
+    
+}
+
+
+
+
+
+
+
+
+        .details , .serv{
+            padding: 75px 0;
+        }
+        .details .card{
+            border: none !important;
+            padding: 15px;
+            box-shadow: 0px 3px 30px rgba(156, 224, 233, 0.7);
+        }
+       .icon-img{
+           width: 75px;
+           height: 70px;
+           margin: auto;
+           display: block;
+           padding-bottom: 5px;
+       }
+
+
+
+
+
+       .serv .card
+       {
+        border: none !important;
+            padding: 15px;
+            box-shadow: 0px 3px 30px rgba(156, 224, 233, 0.7);
+            height: 180px;
+       }
+
+
+
+       .banar{
+            width: 100%;
+            min-height: 50vh;
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/apple.jpg");
+			background-position: center;
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+
+       }
+       .banar .row{
+           padding-top: 75px;
+           color:white;
+       }
+       .btn-info{
+           padding: 10px 25px;
+           color:white;
+           border-radius: 0;
+           background-color: #000000;
+           border: none !important;
+       }
+       .btn-info:hover{
+        background-color: rgb(196, 6, 6);
+       }
+       .bot{
+           padding: 75px 0;
+       }
+
+       .btn-danger{
+    padding: 10px 25px;
+           color:#000000;
+           border-radius: 0;
+           background-color: #fff;
+           border: none !important;
+}
+
+footer
+{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #000000;
+    color:#fff;
+    padding: 75px 0;
+}
+footer ul{
+    list-style-type: none;
+
+}
+footer ul li{
+    list-style-type: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.cont a{
+    text-decoration: none;
+    color: #fff;
+}
+.cont a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width:550px)
+{
+    .hero h1{
+        font-size: 50px;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/applecare-products_2x.png" alt="" class="img-fluid logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto text-center">
+               
+                <li class="nav-item ">
+                  <a class="nav-link text-white" href="#">Mac</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">iPad</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">iPhone</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Watch</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Tv</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Music</a>
+                  </li>
+                 
+                 
+              </ul>
+              <a href="tel:+1 888-674-4143" class="btn btn-danger">Call Now</a>
+            </div>
+            
+
+        </div>
+      </nav>
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-12 mx-auto mb-5 d-flex justify-content-center align-items-center flex-column">
+                    <h1>Welcome to Apple Support</h1>
+                </div>
+                <div class="col-lg-5 col-md-6 col-12 mx-auto mb-3">
+                   <div class="card">
+                       <h2 class="text-center">Get Our Support</h2>
+                    <form action="contactform.php" method="post">
+                        <div class="form-group">
+                            <label for="">Name:</label>
+                            <input type="text" class="form-control" placeholder="Enter Name" required>
+                          </div>
+                        <div class="form-group">
+                          <label for="">Email address:</label>
+                          <input type="email" class="form-control" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Phone Number:</label>
+                            <input type="tel" class="form-control" placeholder="Enter number with country code (+1 758-674-4143)"  required>
+                          </div>
+                        <div class="form-group">
+                          <label for="">Country (USA/ Canada):</label>
+                          <input type="text" class="form-control" placeholder="Enter country" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Product Key:</label>
+                            <input type="text" class="form-control" placeholder="xxxxx-xxxxx-xxxxx-xxxxx-xxxxx" required>
+                          </div>
+                        
+                        <input type="submit" class="btn btn-info mx-auto d-block" value="Start" name="submit">
+                        <br>
+                      </form>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <br><br>
+    <section class="details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 mx-auto mb-3">
+                   <a href="">
+                    <div class="card text-center">
+                        <img src="img/homepage_productnav_iphone_2x.png" alt="" class="img-fluid icon-img">
+                        <h4>iPhone</h4>
+                    </div>
+                   </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mx-auto mb-3">
+                    <a href="">
+                     <div class="card text-center">
+                         <img src="img/homepage_productnav_imac_2x.png" alt="" class="img-fluid icon-img">
+                         <h4>Mac</h4>
+                     </div>
+                    </a>
+                 </div>
+                 <div class="col-lg-2 col-md-4 col-6 mx-auto mb-3">
+                    <a href="">
+                     <div class="card text-center">
+                         <img src="img/homepage_productnav_ipad_2x.png" alt="" class="img-fluid icon-img">
+                         <h4>iPad</h4>
+                     </div>
+                    </a>
+                 </div>
+                 <div class="col-lg-2 col-md-4 col-6 mx-auto mb-3">
+                    <a href="">
+                     <div class="card text-center">
+                         <img src="img/homepage_productnav_apple_watch_2x.png" alt="" class="img-fluid icon-img">
+                         <h4>Watch</h4>
+                     </div>
+                    </a>
+                 </div>
+                 <div class="col-lg-2 col-md-4 col-6 mx-auto mb-3">
+                    <a href="">
+                     <div class="card text-center">
+                         <img src="img/homepage_productdrawer_applemusic_2x.png" alt="" class="img-fluid icon-img">
+                         <h4>Music</h4>
+                     </div>
+                    </a>
+                 </div>
+                 <div class="col-lg-2 col-md-4 col-6 mx-auto mb-3">
+                    <a href="">
+                     <div class="card text-center">
+                         <img src="img/homepage-productdrawer-appletv_2x.png" alt="" class="img-fluid icon-img">
+                         <h4>Tv</h4>
+                     </div>
+                    </a>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="serv">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-6 mx-auto mb-3">
+                   <a href="">
+                    <div class="card text-center">
+                        <img src="img/promo-icon-homepage-password_2x.png" alt="" class="img-fluid icon-img">
+                        <h4>Forgot Apple id or Password</h4>
+                    </div>
+                   </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 mx-auto mb-3">
+                    <a href="">
+                     <div class="card text-center">
+                         <img src="img/promo-icon-homepage-airpods_2x.png" alt="" class="img-fluid icon-img">
+                         <h4>Loss or Missing AirPods</h4>
+                     </div>
+                    </a>
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-6 mx-auto mb-3">
+                    <a href="">
+                     <div class="card text-center">
+                         <img src="img/promo-icon-homepage-repair_2x.png" alt="" class="img-fluid icon-img">
+                         <h4>Apple Repair</h4>
+                     </div>
+                    </a>
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-6 mx-auto mb-3">
+                    <a href="">
+                     <div class="card text-center">
+                         <img src="img/promo-icon-homepage-subscriptions_2x.png" alt="" class="img-fluid icon-img">
+                         <h4>Billing and Subscriptions</h4>
+                     </div>
+                    </a>
+                 </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="banar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-12">
+                    <h1>Get Support</h1>
+                    <h4>Choose a product and we’ll find you the best solution.</h4>
+                    <br>
+                    <a href="" class="btn btn-info">Start Now</a>
+                    <br><br>
+                    <a href="" class="text-white " style="font-size: 25px;">Download the Apple Support app</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="bot">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-12 mx-auto mb-3">
+                   <a href="index.html">
+                    <img src="img/applecare-products_2x.png" alt="" class="img-fluid m-auto d-block">
+                   </a>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12 mx-auto mb-3">
+                    <h1>Service and support from Apple experts</h1>
+                    <p  style="font-size: 25px;">AppleCare products provide additional hardware service options and expert technical support from Apple.</p>
+                  
+                    <a href="" style="font-size: 25px;">Learn about AppleCare plans</a>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mx-auto text-cente mb-3">
+                <h3>Copyright © 2021 Apple Inc. All rights reserved.</h3>
+                <br><br>
+                <a href="" class="btn btn-danger">Download App</a>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mx-auto  mb-3 ">
+                <h3>Navlinks</h3>
+                <br>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-apple pr-2" aria-hidden="true"></i>Home</a></li>
+                    <li><a href=""><i class="fa fa-apple pr-2" aria-hidden="true"></i>Mac</a></li>
+                    <li><a href=""><i class="fa fa-apple pr-2" aria-hidden="true"></i>iPhone</a></li>
+                    <li><a href=""><i class="fa fa-apple pr-2" aria-hidden="true"></i>iPad</a></li>
+                    <li><a href=""><i class="fa fa-apple pr-2" aria-hidden="true"></i>Watch</a></li>
+                    <li><a href=""><i class="fa fa-apple pr-2" aria-hidden="true"></i>Music</a></li>
+                    <li><a href=""><i class="fa fa-apple pr-2" aria-hidden="true"></i>Tv</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mx-auto  mb-3">
+                <h3>Contact Us</h3>
+                <br>
+                <div class=" cont">
+                    <a href="tel:+1 888-674-4143">+1 888-674-4143</a>
+                <br>
+                <a href="mailto:">info@mail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
