@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+        
+        .footer h3::after{
+            content: " ";
+            position: absolute;
+            top:50px;
+            left: 18%;
+            width: 250px;
+            height: 2px;
+            background-color: rgb(238, 10, 181);
+        }
+        .footer .btn{
+            background-color: rgb(238, 10, 181) ;
+            color: white;
+
+        }
+        .footer ul{
+            padding: 15px;
+        }
+        .footer ul li {
+            list-style-type: none;
+            display: block;
+            
+        }
+        .footer ul li a{
+            text-decoration: none;
+            color:white;
+        }
+       
+
+        marquee{
+           
+            font-size: 20px;
+            color:white;
+            font-weight: 600;
+        }
+        .col-bg{
+            
+            width: 100%;
+            min-height: 35vh;
+            background-color: steelblue;
+            padding: 25px;
+        }
+
+#quiz{
+   margin-top: 60px;
+   margin-bottom: 100px;
+}
+
+/* faq */
+        
+
+
+
+#accordion .card, #accordion .card-header{
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 20px;
+    
+    
+   
+    
+}
+#accordion .btn{
+    background: white;
+}
+#accordion .card{
+    box-shadow: 0 2px 25px 0 rgba(110,130,218,0.18);
+    transition: transform 0.5s;
+}
+#accordion .card:hover{
+    transform: scale(1.1);
+}
+/* .card:focus{
+    outline: none !important;
+    border: none !important;
+} */
+#accordion .btn-link{
+    width: 100%;
+    height: 60px;
+    color:black;
+    font-weight: bold !important;
+    text-align: left !important;
+    text-decoration: none !important;
+    background-color: white;
+    
+    
+}
+/* .btn{
+    border: none !important;
+    outline: none !important;
+} */
+#accordion .card-body{
+    background: #e8eeff;
+}
+#accordion .btn-link:after{
+    content: '\2212';
+    width: 35px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    right: 15px;
+    top:25px;
+    position: absolute;
+    background: #e8eeff;
+
+}
+#accordion .btn-link.collapsed:after
+{
+    content: '\002B';
+}
+#accordion .btn-link:before
+{
+    content: ' ';
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background: white;
+    z-index: 1;
+    transform: rotate(45deg);
+    left: 30px;
+    top:60px;
+}
+
+
+.bg-box{
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bg-box i{
+    font-size: 35px;
+    
+
+}
+.bg-box:hover{
+    transform: scale(1.05);
+    background-color: crimson;
+}
+.title-box::before{
+    content: " ";
+    width: 100px;
+    height: 5px;
+    background: crimson;
+    position: absolute;
+    
+   
+
+}
+
+
+
+/* overlauy  */
+
+.image {
+  display: block;
+  width: 100%;
+  
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:crimson;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.page:hover .overlay {
+  width: 98%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.page{
+    padding: 10px;
+}
+.pad{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+        <a class="navbar-brand" href="main.html">
+             <img src="img/logo.png" alt="logo" width="90px">
+        </a>
+        <div class="dropdown dropbottom">
+          <!-- <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Dropright button
+          </button> -->
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown"  > <img src="img/buy-1.jpg" alt="" width="50px" class="img-fluid rounded-circle " >
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Result</a>
+            <a class="dropdown-item" href="#">Given Quiz</a>
+            
+          </div>
+
+
+          
+
+
+
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quiz
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Bank Quiz</a>
+                <a class="dropdown-item" href="#">SSC Quiz</a>
+                
+                <a class="dropdown-item" href="#">Upsc Quiz</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Results</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blogs</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQs</a>
+              </li>
+            
+          </ul>
+          
+        </div>
+    </div>
+      </nav>
+
+
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-info text-white">
+            <h1>Email Subscription</h1>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          
+        </div>
+        <div class="modal-body">
+            <form action="/action_page.php">
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" placeholder="Enter email" id="email" required autocomplete="off">
+                </div>
+               
+                
+                <button type="submit" class="btn btn-primary">Email Subscription</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+
+<br><br>
+
+<div class="footer bg-dark text-white text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-10 p-2 mx-auto ">
+                <h3>Contact Us</h3>
+                <br>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="email" class="form-control" placeholder="Enter email" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Message:</label>
+                      <textarea name="message" class="form-control" id="" placeholder="enter your message" rows="3"></textarea>
+                    </div>
+                   
+                    <button type="submit"  class="btn  btn-block">Submit</button>
+                  </form>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-10 p-2 mx-auto ">
+                <h3>Download App</h3>
+
+                <a href=""><img src="img/play-store.png" alt="" width="150px" class="m-5"></a>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nisi.</p>
+                
+            </div>
+            <div class="col-lg-4 col-md-6 col-10 p-2">
+                <h3>Know More</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms and condition</a></li>
+                    <li><a href="">Start Quiz</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $(window).on("load",function(){
+            setTimeout(function(){
+                $('#myModal').modal('show');
+
+            },5000);
+        });
+    </script>
+    
+  </body>
+</html>
